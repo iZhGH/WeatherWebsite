@@ -22,9 +22,34 @@
     border-radius: 20px;
     background-color:#E9A5F1;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "location location"
+    "weather  date";
   }
   
+  .topSide {
+    grid-area: location;
+  }
+
+  .leftSide {
+    grid-area: weather;
+  }
+
+  .rightSide {
+    grid-area: date;
+  }
+
   .todayText {
     color: white;
+  }
+
+  .weatherLogoDiv {
+    background-color: black;
+    opacity: 0.2;
+    max-width: 25%;
+    min-width: 25%;
   }
   
