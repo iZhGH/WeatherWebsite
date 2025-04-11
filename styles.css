@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    display: border-box;
+  }
+  
+  body {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 250;
+    font-style: normal;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    background-color:#C68EFD;
+  }
+  
+  .todaysWeather {
+    margin-top: 20px;
+    min-width: 800px;
+    min-height: 200px;
+    border-radius: 20px;
+    background-color:#E9A5F1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .todayText {
+    color: white;
+  }
+  
