@@ -11,12 +11,14 @@
     font-style: normal;
     font-size: 25px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color:#C68EFD;
+    align-items: center;
   }
   
-  .todaysWeather {
-    margin-top: 20px;
+  .todaysWeather{
+    margin-top: 75px;
     min-width: 800px;
     min-height: 200px;
     border-radius: 20px;
@@ -28,28 +30,49 @@
     grid-template-areas: 
     "location location"
     "weather  date";
+    gap: 15px;
+  }
+
+  .nextWeather {
+    color: white;
+    margin-top: 25px;
+    min-width: 800px;
+    max-height: 100px;
+    border-radius: 20px;
+    background-color:#E9A5F1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
   }
   
   .topSide {
     grid-area: location;
+
+    font-size: 3rem;
+    text-align: center;
   }
 
   .leftSide {
     grid-area: weather;
+    display: flex;
+    gap: 50px;
+    margin-left: 15px;
+}
+
+
+  .weatherDegrees {
+    font-size: 4rem;
   }
 
   .rightSide {
     grid-area: date;
+    margin-left: 35%;
+    font-size: 2.5rem;
   }
 
   .todayText {
     color: white;
   }
 
-  .weatherLogoDiv {
-    background-color: black;
-    opacity: 0.2;
-    max-width: 25%;
-    min-width: 25%;
-  }
-  
+.dayText {
+    font-size: 2rem;
+}
